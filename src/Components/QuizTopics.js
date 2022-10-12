@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const QuizTopics = ({quizTopic}) => {
-    const {id, name, logo,} = quizTopic
+    const {id, name, logo, total} = quizTopic
     return (
         <div>
             
@@ -20,6 +20,7 @@ const QuizTopics = ({quizTopic}) => {
                     >
                     {name}
                     </p>
+                    <p>Quiz : {total}</p>
                     <button>
                         <Link
                         to={`/quiz/${id}`}
