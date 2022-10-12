@@ -5,6 +5,7 @@ import Home from "../Components/Home";
 import Statistics from "../Components/Statistics";
 import Blog from "../Components/Blog";
 import About from "../Components/About";
+import ReactRoute from "../Components/Blog/ReactRoute";
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
                 path : '/about',
                 element : <About></About>
             },
+            {
+                path : '/reactroute',
+                element : <ReactRoute></ReactRoute>
+            }
         ]
     }
 ]);

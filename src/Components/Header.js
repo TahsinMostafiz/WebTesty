@@ -12,7 +12,7 @@ const Header = () => {
                 title="WebTesty"
                 class="inline-flex items-center"
               >
-                <img src="../Assets/img/brand.png" alt="Brand" />
+                <img className='w-fit h-7' src="../img/brand.png" alt="Brand" />
                 <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                   WebTesty
                 </span>
@@ -93,7 +93,7 @@ const Header = () => {
                             title="WebTesty"
                             class="inline-flex items-center"
                           >
-                            <img src="../Assets/img/brand.png" alt="Brand" />
+                            <img className='w-fit h-7' src="../img/brand.png" alt="Brand" />
                             <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                               WebTesty
                             </span>
