@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Options = ({option, handleCorrectAnswer}) => {
-    // console.log(correctAnswer);
+    
     
     return (
         <div>
