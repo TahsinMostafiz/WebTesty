@@ -6,6 +6,7 @@ import Statistics from "../Components/Statistics";
 import Blog from "../Components/Blog";
 import About from "../Components/About";
 import ReactRoute from "../Components/Blog/ReactRoute";
+import ContextApi from "../Components/Blog/ContextApi";
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
             {
                 path : '/reactroute',
                 element : <ReactRoute></ReactRoute>
+            },
+            {
+                path : '/contextapi',
+                element : <ContextApi></ContextApi>
             }
         ]
     }
