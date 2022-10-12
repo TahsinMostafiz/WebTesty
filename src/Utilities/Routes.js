@@ -15,9 +15,15 @@ const router = createBrowserRouter([
         path: '/',
         element : <Root></Root>,
         errorElement : <ErrorPage></ErrorPage>,
+        loader : async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+        },
         children : [
             {
                 path : '/',
+                loader : async () => {
+                    return fetch('https://openapi.programming-hero.com/api/quiz')
+                },
                 element : <Home></Home>
             },
             {

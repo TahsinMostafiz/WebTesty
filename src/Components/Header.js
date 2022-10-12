@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -6,8 +7,8 @@ const Header = () => {
         return (
           <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div class="relative flex items-center justify-between">
-              <a
-                href="/"
+              <Link
+                to="/"
                 aria-label="WebTesty"
                 title="WebTesty"
                 class="inline-flex items-center"
@@ -16,47 +17,47 @@ const Header = () => {
                 <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                   WebTesty
                 </span>
-              </a>
+              </Link>
               <ul class="flex items-center hidden space-x-8 lg:flex">
                 <li>
-                  <a
-                    href="/home"
+                  <Link
+                    to="/home"
                     aria-label="Home"
                     title="Home"
                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/statistics"
+                  <Link
+                    to="/statistics"
                     aria-label="Statistics"
                     title="Statistics"
                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                   >
                     Statistics
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/blog"
+                  <Link
+                    to="/blog"
                     aria-label="Blog"
                     title="Blog"
                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                   >
                     Blog
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/about"
+                  <Link
+                    to="/about"
                     aria-label="About"
                     title="About"
                     class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
               </ul>
               
@@ -87,8 +88,8 @@ const Header = () => {
                     <div class="p-5 bg-white border rounded shadow-sm">
                       <div class="flex items-center justify-between mb-4">
                         <div>
-                          <a
-                            href="/"
+                          <Link
+                            to="/"
                             aria-label="WebTesty"
                             title="WebTesty"
                             class="inline-flex items-center"
@@ -97,7 +98,7 @@ const Header = () => {
                             <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                               WebTesty
                             </span>
-                          </a>
+                          </Link>
                         </div>
                         <div>
                           <button
@@ -118,44 +119,44 @@ const Header = () => {
                       <nav>
                         <ul class="space-y-4">
                           <li>
-                            <a
-                              href="/home"
+                            <Link
+                              to="/home"
                               aria-label="home"
                               title="home"
                               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
                               Home
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="/statistics"
+                            <Link
+                              to="/statistics"
                               aria-label="Statistics"
                               title="Statistics"
                               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
                               Statistics
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="/blog"
+                            <Link
+                              to="/blog"
                               aria-label="Blog"
                               title="Blog"
                               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
                               Blog
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a
-                              href="/about"
+                            <Link
+                              to="/about"
                               aria-label="About"
                               title="About"
                               class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                             >
                               About
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </nav>
