@@ -7,6 +7,7 @@ import Blog from "../Components/Blog";
 import About from "../Components/About";
 import ReactRoute from "../Components/Blog/ReactRoute";
 import ContextApi from "../Components/Blog/ContextApi";
+import UseRef from "../Components/Blog/UseRef";
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path : '/contextapi',
                 element : <ContextApi></ContextApi>
+            },
+            {
+                path : '/useref',
+                element : <UseRef></UseRef>
             }
         ]
     }

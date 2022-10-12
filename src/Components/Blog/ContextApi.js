@@ -78,11 +78,11 @@ const ContextApi = () => {
                     <li>3. import and create a context like so:</li>
                 </ul>
               </p>
-              <img src="../img/context1.png" alt="" />
+              
               <ul className='text-left pt-3'>
                 <li>4. Create a component that will wrap the provider named Provider e.g. UserProvider Example using React Hooks:</li>
               </ul>
-              <img src="../img/context2.png" alt="" />
+              
             </div>
             
           </div>
@@ -93,17 +93,16 @@ const ContextApi = () => {
 Example using React Hooks:</li>
                 <p className="text-gray-700">The difference between the two options above is if you want the context to be a single nested property by this name, to explode it to its properties (which in my opinion is more convenient).</p>
               </ul>
-              <img className='pb-3' src="../img/context3.png" alt="" />
+              
               <ul className='text-left pb-3'>
                 <li>6. Finally export them</li>
               </ul>
-              <img className='pb-3' src="../img/context4.png" alt="" />
+              
               <ul className='text-left pb-3'>
                 <li>6. And use them however you like
                    <br /> For example:</li>
               </ul>
-              <img className='pb-3' src="../img/context5.png" alt="" />
-              <img className='pb-3' src="../img/context6.png" alt="" />
+              
             </div>
             
           </div>
