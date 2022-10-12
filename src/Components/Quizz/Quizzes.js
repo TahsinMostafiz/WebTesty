@@ -10,7 +10,7 @@ const Quizzes = () => {
     return (
         <div>
             <h2 className='text-4xl font-bold pt-7 pb-5'>Quiz of {name}</h2>
-            <h2 className='text-1xl font-bold'>Total Quiz : {total}</h2>
+            <h2 className='text-1xl font-bold pb-5'>Total Quiz : {total}</h2>
 
             <div>
                 {
