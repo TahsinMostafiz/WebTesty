@@ -1,10 +1,16 @@
-import React from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import headerImg from '../Assets/img/header.jpg'
 import QuizTopics from './QuizTopics';
+import { QuizContext } from './Root';
 
 const Home = () => {
-    const quizTopics = useLoaderData();
+    const quizTopics = useContext(QuizContext);
+
+
+    const handleQuizById = (id) => {
+        console.log(id)
+    }
     return (
         <div>
             <section>
@@ -50,6 +56,7 @@ const Home = () => {
                         quizTopics.data.map(quizTopic => <QuizTopics
                         key={quizTopic.id}
                         quizTopic={quizTopic}
+                        handleQuizById={handleQuizById}
                         ></QuizTopics>)
                     }
                 </div>
