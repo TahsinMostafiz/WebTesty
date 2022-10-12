@@ -8,9 +8,7 @@ const Home = () => {
     const quizTopics = useContext(QuizContext);
 
 
-    const handleQuizById = (id) => {
-        console.log(id)
-    }
+    
     return (
         <div>
             <section>
@@ -56,7 +54,7 @@ const Home = () => {
                         quizTopics.data.map(quizTopic => <QuizTopics
                         key={quizTopic.id}
                         quizTopic={quizTopic}
-                        handleQuizById={handleQuizById}
+                        
                         ></QuizTopics>)
                     }
                 </div>

@@ -8,6 +8,7 @@ import About from "../Components/About";
 import ReactRoute from "../Components/Blog/ReactRoute";
 import ContextApi from "../Components/Blog/ContextApi";
 import UseRef from "../Components/Blog/UseRef";
+import Quizzes from "../Components/Quizz/Quizzes";
 
 
 const router = createBrowserRouter([
@@ -21,9 +22,6 @@ const router = createBrowserRouter([
         children : [
             {
                 path : '/',
-                loader : async () => {
-                    return fetch('https://openapi.programming-hero.com/api/quiz')
-                },
                 element : <Home></Home>
             },
             {
@@ -53,6 +51,13 @@ const router = createBrowserRouter([
             {
                 path : '/useref',
                 element : <UseRef></UseRef>
+            },
+            {
+                path : '/quiz/:id',
+                loader : async ({params}) => {
+                    return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+                },
+                element: <Quizzes></Quizzes>
             }
         ]
     }

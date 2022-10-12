@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const QuizTopics = ({quizTopic, handleQuizById}) => {
+const QuizTopics = ({quizTopic}) => {
     const {id, name, logo,} = quizTopic
     return (
         <div>
@@ -20,9 +20,9 @@ const QuizTopics = ({quizTopic, handleQuizById}) => {
                     >
                     {name}
                     </p>
-                    <button onClick={() => handleQuizById (id)}>
+                    <button>
                         <Link
-                        to="/"
+                        to={`/quiz/${id}`}
                         aria-label=""
                         className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800 bg-rose-200 px-2 rounded-md"
                         >
