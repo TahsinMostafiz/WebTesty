@@ -32,9 +32,9 @@ const Questions = ({singleQuestion, index}) => {
     return (
         <div className='relative w-2/3 m-auto shadow-md border rounded-md mb-3 p-5'>
             <h3 className='text-1xl font-semibold'>Quiz {index +1} : {question.slice(3,-4)}</h3>
-            <p className='absolute top-2 right-5' onClick={() => showCorrectAnswer()}><FontAwesomeIcon icon={faEye} /></p>
+            <p className='absolute top-2 right-5 cursor-pointer' onClick={() => showCorrectAnswer()}><FontAwesomeIcon icon={faEye} /></p>
             {
-                options.map((option, idx) => <p key={idx} ><input onClick={(e) => handleCorrectAnswer(e.target.value)} type="radio" value={option} name="option" /> {option}</p>)
+                options.map((option, idx) => <p key={idx} > <label htmlFor={option}><input onClick={(e) => handleCorrectAnswer(e.target.value)} id={option} type="radio" value={option} name="option" /> {option}</label> </p>)
             }
             
         </div>
